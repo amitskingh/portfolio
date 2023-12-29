@@ -39,6 +39,7 @@
   color: var(--txt-btn);
   font-weight: 600;
   background-color: var(--clr-btn);
+  cursor:pointer;
 }
 
 .btn:hover {

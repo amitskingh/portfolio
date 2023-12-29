@@ -26,10 +26,13 @@
     /> -->
     
     <style>
-      body{
-        overflow-x: hidden;
-        /* margin-left: 0.5rem; */
-        /* margin-right: 0.5rem; */
+      
+      html{
+        scroll-behavior: smooth;
+      }
+
+      header {
+        transition: transform 0.5s ease-in-out;
       }
       
     </style>
@@ -160,12 +163,11 @@
       </p>
     </div>
 
-    <div class="aboutme container">
+    <div id="about" class="aboutme container">
       <div class="headingContainer">
         <div class="line left"></div>
         <div class="dots"></div>
         <h2 class="about__title title__type">About Me</h2>
-        <!-- <div class="heading"><h1>AMIT</h1></div> -->
         <div class="dots"></div>
         <div class="line right"></div>
       </div>
@@ -196,12 +198,13 @@
       </div>
     </div>
 
+    
+
     <div class="skills container">
       <div class="headingContainer">
         <div class="line left"></div>
         <div class="dots"></div>
         <h2 class="skill__title title__type">Skills</h2>
-        <!-- <div class="heading"><h1>AMIT</h1></div> -->
         <div class="dots"></div>
         <div class="line right"></div>
       </div>
@@ -234,12 +237,11 @@
       </div>
     </div>
 
-    <div class="contact container">
+    <div id="contact" class="contact container">
       <div class="headingContainer">
         <div class="line left"></div>
         <div class="dots"></div>
         <h2 class="contact__title title__type">Contacts</h2>
-        <!-- <div class="heading"><h1>AMIT</h1></div> -->
         <div class="dots"></div>
         <div class="line right"></div>
       </div>
@@ -257,5 +259,24 @@
     <script src="./scripts/mobile-nav.js"></script>
     <script src="./scripts/theme-toggle.js"></script>
 
+    <script>
+      let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // Scroll down
+    document.querySelector("header").style.transform = "translateY(-100%)";
+  } else {
+    // Scroll up
+    document.querySelector("header").style.transform = "translateY(0)";
+  }
+
+  lastScroll = currentScroll;
+});
+
+    </script>
+    
   </body>
 </html>
