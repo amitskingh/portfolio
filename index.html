@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="./stylesheets/about.css" />
     <link rel="stylesheet" href="./stylesheets/skills.css" />
     <link rel="stylesheet" href="./stylesheets/contact.css" />
-    <link rel="stylesheet" href="./dark.css" />
-    <!-- <link rel="stylesheet" href="./light.css" /> -->
-    <link rel="stylesheet" href="./subtitle.css" />
-    <link rel="stylesheet" href="./title.css" />
+    <link rel="stylesheet" href="./stylesheets/dark.css"  id="dark__theme" disabled/>
+    <link rel="stylesheet" href="./stylesheets/light.css" id="light__theme"/>
+    <link rel="stylesheet" href="./stylesheets/subtitle.css" />
+    <link rel="stylesheet" href="./stylesheets/title.css" />
     <link rel="stylesheet" href="./stylesheets/toggle.css">
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,7 +34,6 @@
       
     </style>
     
-    <script src="./scripts/mobile-nav.js"></script>
 
   </head>
 
@@ -255,30 +254,8 @@
       </div>
     </div>
 
-    <!-- <script src="./scripts/mobile-nav.js"></script> -->
-    <script>
-      const themes = document.querySelectorAll('.theme__mode');
-      const covers = document.querySelectorAll('.cover');
-      let isLight = true;
-  
-      themes.forEach(theme => {
-        theme.addEventListener(('click'), ()=>{
-          if(isLight){
-            covers.forEach(cover => {
-              cover.style.transform = 'translateX(0)'
-            });
-            // console.log(cover.style.transform);
-            isLight = false;
-          }
-          else {
-            covers.forEach(cover => {
-              cover.style.transform = 'translateX(26px)'
-            });
-              isLight = true;
-          }
-      })
-      });
-  
-    </script>
+    <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/theme-toggle.js"></script>
+
   </body>
 </html>
