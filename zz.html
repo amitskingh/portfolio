@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      .fixed-element {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        z-index: 2; /* Ensure the fixed element is above other content */
+      }
+
+      .scrollable-content {
+        padding-top: 50px; /* Adjust to match the height of the fixed element */
+        overflow-y: scroll;
+        height: 100vh;
+      }
+
+      /* Add your other styles here */
+    </style>
+  </head>
+  <body>
+    <div class="fixed-element">Fixed Header</div>
+
+    <div class="scrollable-content">
+      <!-- Your main content goes here -->
+      <h1>Main Content</h1>
+      <p>This is the main content of your page.</p>
+    </div>
+  </body>
+</html>

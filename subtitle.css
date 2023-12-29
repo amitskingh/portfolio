@@ -1,0 +1,12 @@
+/* 0.875rem */
+/* 1rem 475px*/
+/* 1.165rem 1024 */
+.subtitle__type {
+  margin-bottom: 0;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: solid 3px #ee2b90;
+  display: inline-block;
+  border-radius: 2rem;
+}

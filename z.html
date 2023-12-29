@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freeze Overflow on Hamburger Click</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: auto; /* Allow body scrolling by default */
+      transition: overflow 0.3s ease; /* Add a smooth transition for the overflow property */
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      z-index: 2;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: -250px; /* Start off-screen */
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      transition: left 0.3s ease; /* Add a smooth transition for the left property */
+      z-index: 3;
+    }
+
+    .menu a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: #fff;
+    }
+    p{
+      text-align: center;
+      
+      font-size: xx-large;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay" id="overlay"></div>
+
+<div class="menu" id="menu">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <!-- Add more menu items as needed -->
+</div>
+
+<button onclick="toggleMenu()">☰ Open Menu</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, tempora? Error, est fugit vero aut deleniti delectus ducimus alias doloribus nisi optio cum, expedita corrupti. Eum a atque fuga ab nam sint eveniet quia, architecto dolor, hic odit quisquam necessitatibus blanditiis animi voluptates. Repellendus aperiam rerum commodi! Possimus nobis ducimus libero rem atque harum ipsam dolores repellat dicta, voluptatum quaerat quidem ad optio doloribus ab maxime molestiae ipsum? Ad eum nisi nostrum quam, sequi beatae vero doloremque fugiat similique consequuntur odit quo deleniti quasi debitis ducimus, ab molestiae natus. Molestiae natus nostrum perspiciatis nemo iste pariatur tempora fugit sapiente illo? Eos, tenetur dolorum laudantium aliquam explicabo quaerat mollitia tempora, unde perspiciatis repudiandae adipisci iste quos vel fuga accusamus? Eaque, facilis quasi! Soluta officia itaque necessitatibus quaerat ipsa, animi ab quasi, minus aliquam architecto fuga eveniet sint voluptatum natus quidem quis assumenda rem! Placeat, quos similique earum cum voluptatibus officiis omnis ipsum laboriosam doloremque recusandae voluptatem accusantium error expedita impedit labore ut ab. Esse, sunt. Quidem aut et debitis non illo provident repudiandae ullam rerum asperiores ipsam, eius obcaecati vitae corrupti nobis consectetur explicabo reiciendis nihil nesciunt nisi, qui laborum? Placeat maxime nihil magni nemo ducimus delectus dolorum, qui rem aperiam quasi adipisci ipsam quas suscipit fugit quaerat modi id autem exercitationem natus minus rerum vero possimus. Optio, laborum, aliquam doloribus blanditiis eaque dicta voluptatem saepe hic quod harum, ipsa quas pariatur doloremque natus assumenda.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, tempora? Error, est fugit vero aut deleniti delectus ducimus alias doloribus nisi optio cum, expedita corrupti. Eum a atque fuga ab nam sint eveniet quia, architecto dolor, hic odit quisquam necessitatibus blanditiis animi voluptates. Repellendus aperiam rerum commodi! Possimus nobis ducimus libero rem atque harum ipsam dolores repellat dicta, voluptatum quaerat quidem ad optio doloribus ab maxime molestiae ipsum? Ad eum nisi nostrum quam, sequi beatae vero doloremque fugiat similique consequuntur odit quo deleniti quasi debitis ducimus, ab molestiae natus. Molestiae natus nostrum perspiciatis nemo iste pariatur tempora fugit sapiente illo? Eos, tenetur dolorum laudantium aliquam explicabo quaerat mollitia tempora, unde perspiciatis repudiandae adipisci iste quos vel fuga accusamus? Eaque, facilis quasi! Soluta officia itaque necessitatibus quaerat ipsa, animi ab quasi, minus aliquam architecto fuga eveniet sint voluptatum natus quidem quis assumenda rem! Placeat, quos similique earum cum voluptatibus officiis omnis ipsum laboriosam doloremque recusandae voluptatem accusantium error expedita impedit labore ut ab. Esse, sunt. Quidem aut et debitis non illo provident repudiandae ullam rerum asperiores ipsam, eius obcaecati vitae corrupti nobis consectetur explicabo reiciendis nihil nesciunt nisi, qui laborum? Placeat maxime nihil magni nemo ducimus delectus dolorum, qui rem aperiam quasi adipisci ipsam quas suscipit fugit quaerat modi id autem exercitationem natus minus rerum vero possimus. Optio, laborum, aliquam doloribus blanditiis eaque dicta voluptatem saepe hic quod harum, ipsa quas pariatur doloremque natus assumenda.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, tempora? Error, est fugit vero aut deleniti delectus ducimus alias doloribus nisi optio cum, expedita corrupti. Eum a atque fuga ab nam sint eveniet quia, architecto dolor, hic odit quisquam necessitatibus blanditiis animi voluptates. Repellendus aperiam rerum commodi! Possimus nobis ducimus libero rem atque harum ipsam dolores repellat dicta, voluptatum quaerat quidem ad optio doloribus ab maxime molestiae ipsum? Ad eum nisi nostrum quam, sequi beatae vero doloremque fugiat similique consequuntur odit quo deleniti quasi debitis ducimus, ab molestiae natus. Molestiae natus nostrum perspiciatis nemo iste pariatur tempora fugit sapiente illo? Eos, tenetur dolorum laudantium aliquam explicabo quaerat mollitia tempora, unde perspiciatis repudiandae adipisci iste quos vel fuga accusamus? Eaque, facilis quasi! Soluta officia itaque necessitatibus quaerat ipsa, animi ab quasi, minus aliquam architecto fuga eveniet sint voluptatum natus quidem quis assumenda rem! Placeat, quos similique earum cum voluptatibus officiis omnis ipsum laboriosam doloremque recusandae voluptatem accusantium error expedita impedit labore ut ab. Esse, sunt. Quidem aut et debitis non illo provident repudiandae ullam rerum asperiores ipsam, eius obcaecati vitae corrupti nobis consectetur explicabo reiciendis nihil nesciunt nisi, qui laborum? Placeat maxime nihil magni nemo ducimus delectus dolorum, qui rem aperiam quasi adipisci ipsam quas suscipit fugit quaerat modi id autem exercitationem natus minus rerum vero possimus. Optio, laborum, aliquam doloribus blanditiis eaque dicta voluptatem saepe hic quod harum, ipsa quas pariatur doloremque natus assumenda.</p>
+
+<script>
+  function toggleMenu() {
+    var overlay = document.getElementById("overlay");
+    var menu = document.getElementById("menu");
+    var body = document.body;
+
+    if (menu.style.left === "0px") {
+      // Menu is open, close it
+      menu.style.left = "-250px";
+      overlay.style.display = "none";
+      body.style.overflow = "auto"; // Allow scrolling
+    } else {
+      // Menu is closed, open it
+      menu.style.left = "0";
+      overlay.style.display = "block";
+      body.style.overflow = "hidden"; // Prevent scrolling
+    }
+  }
+</script>
+
+</body>
+</html>

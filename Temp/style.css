@@ -1,0 +1,46 @@
+body {
+  /* background-color: #f8fafc; */
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+
+  color: #94a3b8;
+  /* color: rgb(188, 188, 206); */
+}
+.container {
+  position: relative;
+  border: solid 1px rgb(201, 15, 195);
+}
+main {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(4, 2, 22); */
+  /* background-image: url("/background4.jpg"); */
+  /* Options: auto, contain, cover, or specific dimensions */
+  background-size: vh;
+  /* Options: repeat, repeat-x, repeat-y, no-repeat */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* color: white; */
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: sticky;
+  /* background-color: var(--nav-light); */
+  background-color: hsla(0, 0%, 100%, 0.9);
+  --_filter: blur(5px) saturate(200%);
+  backdrop-filter: var(--_filter);
+  top: 0;
+  z-index: 1;
+
+  /* background-color: #0f172abf; */
+  /* Add backdrop filter for blur effect */
+  /* backdrop-filter: blur(8px); */
+  padding-top: 7px;
+  padding-bottom: 7px;
+  align-items: center;
+  /* box-shadow: 0 0 2px rgb(0, 0, 0.1); */
+  border-bottom: solid 1px #6e778bbf;
+}

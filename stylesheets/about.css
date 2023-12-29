@@ -1,0 +1,126 @@
+.aboutme {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+}
+.reach-img__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+
+  border-left: dotted 5px;
+  border-top: dotted 2px;
+  border-radius: 200px;
+  transition: border 0.3s;
+  width: fit-content;
+}
+.about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.profile__img {
+  width: 16rem;
+}
+.about__description {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--size-sm);
+  line-height: 1.5rem;
+  /* border-bottom: dashed 3px; */
+}
+.about__title {
+  text-transform: capitalize;
+  font-size: var(--size-2xl);
+}
+
+.reach__button {
+  font-size: var(--size-sm);
+}
+
+/* screen size extra small */
+@media (min-width: 475px) {
+  .reach__button {
+    font-size: var(--size-base);
+  }
+  .profile__img {
+    width: 18rem;
+  }
+  .about__container {
+    gap: 1.5rem;
+  }
+  .about__description {
+    font-size: var(--size-base);
+  }
+  .about__title {
+    font-size: var(--size-3xl);
+  }
+  .about__subtitle {
+    font-size: var(--size-base);
+  }
+}
+
+@media (min-width: 1024px) {
+  .reach__button {
+    font-size: var(--size-lg);
+  }
+  .reach-img__container {
+    border-left: dotted 7px;
+    border-top: dotted 3px;
+    transition: border ease-in-out;
+  }
+  .about__container {
+    gap: 5rem;
+    /* justify-content: space-around; */
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .profile__img {
+    width: 22rem;
+  }
+
+  .about__description {
+    font-size: var(--size-lg);
+  }
+  .about__subtitle {
+    font-size: var(--size-lg);
+  }
+
+  .about__title {
+    font-size: var(--size-5xl);
+  }
+}
+
+/* xl screen */
+@media (min-width: 1280px) {
+  .reach__button {
+    font-size: var(--size-xl);
+  }
+  .profile__img {
+    width: 24rem;
+  }
+  .about__container {
+    gap: 10rem;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .profile__img {
+    width: 22rem;
+  }
+
+  .about__description {
+    font-size: var(--size-xl);
+  }
+  .about__subtitle {
+    font-size: var(--size-xl);
+  }
+
+  .about__title {
+    font-size: var(--size-6xl);
+  }
+}

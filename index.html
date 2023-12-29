@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>😁Portfolio</title>
+    <link rel="stylesheet" href="./modern-normalize.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/header.css" />
+    <link rel="stylesheet" href="./stylesheets/mobile.css" />
+    <link rel="stylesheet" href="./stylesheets/profile.css" />
+    <link rel="stylesheet" href="./stylesheets/about.css" />
+    <link rel="stylesheet" href="./stylesheets/skills.css" />
+    <link rel="stylesheet" href="./stylesheets/contact.css" />
+    <link rel="stylesheet" href="./dark.css" />
+    <!-- <link rel="stylesheet" href="./light.css" /> -->
+    <link rel="stylesheet" href="./subtitle.css" />
+    <link rel="stylesheet" href="./title.css" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    /> -->
+    
+    <style>
+      body{
+        overflow-x: hidden;
+        /* margin-left: 0.5rem; */
+        /* margin-right: 0.5rem; */
+      }
+
+      .sun__svg, .moon__svg{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .theme__mode{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #5b21b6;
+        width: 55px;
+        border-radius: 100px;
+        cursor: pointer;
+        /* box-shadow: 0 0 2px #5b21b6; */
+    }
+
+    .sun, .moon{
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 2px;
+    }
+    .cover{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 200px;
+      transform: translateX(26px);
+      margin-left: 2px;
+      background-color: white;
+      transition: ease transform 0.3s;
+      z-index: 20;
+    }
+      
+    </style>
+    
+    <script src="./scripts/mobile-nav.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+
+    <header class="sticky__navbar">
+      <div class="header__container container">
+        <nav class="navbar">
+          <button class="header__bars">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+          </button>
+          <ul class="header__menu">
+            <li><a class="header__link" href="#about">About</a></li>
+            <li><a class="header__link" href="#featured">Work</a></li>
+            <li><a class="header__link" href="#contact">Contact</a></li>
+            <li class="header__line"></li>
+            <li>
+              <div class="theme__mode">
+                <div class="cover"></div>
+                <div class="sun">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                <svg class="sun__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <circle style="fill:#ffffff;stroke:#ffffff00;stroke-width:3;stroke-miterlimit:10;" cx="23.947" cy="23.947" r="7.459"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="23.947" y1="14.291" x2="23.947" y2="2.457"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="17.119" y1="17.119" x2="8.751" y2="8.751"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="14.291" y1="23.947" x2="2.457" y2="23.947"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="17.119" y1="30.774" x2="8.751" y2="39.143"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="23.947" y1="33.602" x2="23.947" y2="45.437"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="30.774" y1="30.774" x2="39.143" y2="39.143"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="33.602" y1="23.947" x2="45.437" y2="23.947"/>
+                <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="30.774" y1="17.119" x2="39.143" y2="8.751"/>
+                </svg>
+                </div>
+                
+                <div class="moon">
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <svg class="moon__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                  <path style="fill:#ffffff;" d="M30.849,5.203c-1.2-0.46-2.416-0.785-3.635-1.016c3.482,5.431,4.444,12.378,1.954,18.863
+                    c-3.696,9.628-13.71,14.952-23.496,13.095c2.332,3.637,5.782,6.601,10.125,8.268c10.828,4.157,22.975-1.251,27.131-12.079
+                    S41.676,9.359,30.849,5.203z"/>
+                  </svg>
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              <a class="header__resume btn" href="#">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- End of Navigation bar -->
+
+    <!-- Mobile Navigation Start -->
+    <div class="mobile-nav__overlay"></div>
+    <div class="mybox container">
+      <div class="mobile-nav">
+        <div class="mobile-nav__button">
+          <div class="theme__mode">
+            <div class="cover"></div>
+            <div class="sun">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+            <svg class="sun__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+            <circle style="fill:#ffffff;stroke:#ffffff00;stroke-width:3;stroke-miterlimit:10;" cx="23.947" cy="23.947" r="7.459"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="23.947" y1="14.291" x2="23.947" y2="2.457"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="17.119" y1="17.119" x2="8.751" y2="8.751"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="14.291" y1="23.947" x2="2.457" y2="23.947"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="17.119" y1="30.774" x2="8.751" y2="39.143"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="23.947" y1="33.602" x2="23.947" y2="45.437"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="30.774" y1="30.774" x2="39.143" y2="39.143"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="33.602" y1="23.947" x2="45.437" y2="23.947"/>
+            <line class="line" style="fill:none;stroke:#ffffff;stroke-width:3;stroke-miterlimit:10;" x1="30.774" y1="17.119" x2="39.143" y2="8.751"/>
+            </svg>
+            </div>
+            
+            <div class="moon">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <svg class="moon__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path style="fill:#ffffff;" d="M30.849,5.203c-1.2-0.46-2.416-0.785-3.635-1.016c3.482,5.431,4.444,12.378,1.954,18.863
+                c-3.696,9.628-13.71,14.952-23.496,13.095c2.332,3.637,5.782,6.601,10.125,8.268c10.828,4.157,22.975-1.251,27.131-12.079
+                S41.676,9.359,30.849,5.203z"/>
+              </svg>
+            </div>
+            
+          </div>
+          <button class="mobile-nav__close">
+            <div class="cross__container">
+              <div class="cross one"></div>
+              <div class="cross two"></div>
+            </div>
+            </svg>
+          </button>
+        </div>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__link" href="#about">About</a></li>
+          <li><a class="mobile-nav__link" href="#featured">Work</a></li>
+          <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+          <li class="header__line"></li>
+          <li>
+            <a class="mobile-nav__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation End -->
+    <div class="profile container">
+      <h3 class="profile__hello">
+        Hi, <span style="color: yellow">👋</span> I'm Amit.
+      </h3>
+      <h2 class="profile__info">Web Devloper &<br />Tech Enthusiastic.</h2>
+      <p class="profile__description">
+        If you are seacrhing for building the websites and have a awesome
+        project, I am your guy!
+      </p>
+    </div>
+
+    <div class="aboutme container">
+      <div class="headingContainer">
+        <div class="line left"></div>
+        <div class="dots"></div>
+        <h2 class="about__title title__type">About Me</h2>
+        <!-- <div class="heading"><h1>AMIT</h1></div> -->
+        <div class="dots"></div>
+        <div class="line right"></div>
+      </div>
+      <div class="about__container">
+        <div class="reach-img__container">
+          <img class="profile__img" src="./profile-photo/Amit.png" alt="" />
+          <div class="reach-btn__container">
+            <button class="reach__button btn">Reach Me</button>
+          </div>
+        </div>
+
+        <div class="about__description">
+          <p>
+            I am a experienced software devloper and tech enthusiastic lerning
+            the things by building the projects, little failing and learning on
+            the way. I keep my self up to date with the technologies and adapt
+            the things relatively fast. I am skilled in building the web
+            software or application.
+          </p>
+          <p>
+            Reach out me if you need any kind of the consultancy about the
+            website or you want to build your own website for your own business
+            or even if you need the assistance. Committed to driving business
+            success and user satisfaction
+          </p>
+          <h4 class="about__subtitle">Learning, Building and Improving.</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills container">
+      <div class="headingContainer">
+        <div class="line left"></div>
+        <div class="dots"></div>
+        <h2 class="skill__title title__type">Skills</h2>
+        <!-- <div class="heading"><h1>AMIT</h1></div> -->
+        <div class="dots"></div>
+        <div class="line right"></div>
+      </div>
+      <div class="total__skills">
+        <div class="technology">
+          <h2 class="skill__subtitle subtitle__type">Technology</h2>
+          <ul>
+            <li class="skill__list">HTML</li>
+            <li class="skill__list">CSS</li>
+            <li class="skill__list">Javascript</li>
+          </ul>
+        </div>
+        <div class="frameworks">
+          <h2 class="skill__subtitle subtitle__type">Frameworks</h2>
+          <ul>
+            <li class="skill__list">Node js</li>
+            <li class="skill__list">Express js</li>
+            <li class="skill__list">Tailwind</li>
+          </ul>
+        </div>
+        <div class="programming__langauge">
+          <h2 class="skill__subtitle subtitle__type">Programming Languages</h2>
+          <ul>
+            <li class="skill__list">C</li>
+            <li class="skill__list">Cpp</li>
+            <li class="skill__list">Java</li>
+            <li class="skill__list">Python</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact container">
+      <div class="headingContainer">
+        <div class="line left"></div>
+        <div class="dots"></div>
+        <h2 class="contact__title title__type">Contacts</h2>
+        <!-- <div class="heading"><h1>AMIT</h1></div> -->
+        <div class="dots"></div>
+        <div class="line right"></div>
+      </div>
+      <div class="contact__description">
+        <h2 class="contact__subtitle">Get in Touch</h2>
+        <button class="contact__button btn">Say Hello</button>
+      </div>
+      <div class="contact__icon">
+        <a class="contact__button">Email</a>
+        <a class="contact__button">LinkedIn</a>
+        <a class="contact__button">Github</a>
+      </div>
+    </div>
+
+    <!-- <script src="./scripts/mobile-nav.js"></script> -->
+    <script>
+      const themes = document.querySelectorAll('.theme__mode');
+      const covers = document.querySelectorAll('.cover');
+      let isLight = true;
+  
+      themes.forEach(theme => {
+        theme.addEventListener(('click'), ()=>{
+          if(isLight){
+            covers.forEach(cover => {
+              cover.style.transform = 'translateX(0)'
+            });
+            // console.log(cover.style.transform);
+            isLight = false;
+          }
+          else {
+            covers.forEach(cover => {
+              cover.style.transform = 'translateX(26px)'
+            });
+              isLight = true;
+          }
+      })
+      });
+  
+    </script>
+  </body>
+</html>

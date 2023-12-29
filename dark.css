@@ -1,0 +1,39 @@
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  color: #94a3b8;
+}
+
+.sticky__navbar {
+  background-color: #0f172abf;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0px 1px #fafafa;
+}
+
+.header__menu {
+  color: #f1f5f9;
+}
+
+.bars,
+.cross,
+.mobile-nav__sun {
+  background-color: #f1f5f9;
+}
+
+.title__type {
+  color: #fafafa;
+}
+
+.mobile-nav {
+  background-color: #1b2952;
+  box-shadow: 0 0 10px #0f172a;
+}
+
+.mobile-nav__menu {
+  color: #f1f5f9;
+}
+
+.subtitle__type,
+.contact__subtitle {
+  color: #f5f5f5;
+}

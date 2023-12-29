@@ -1,0 +1,29 @@
+.dots {
+  width: 8px;
+  height: 8px;
+  background-color: #991eaf;
+  /* background: linear-gradient(90deg, #691eaf, #af1eaa); */
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+}
+.headingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  /* background-color: #1e40af; */
+  background-color: #991eaf;
+  /* background-color: #af1e7f; */
+  /* background: linear-gradient(90deg, #691eaf, #af1eaa); */
+  width: 15%;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+}
+.title__type {
+  font-weight: 700;
+  padding-left: 2%;
+  padding-right: 2%;
+}

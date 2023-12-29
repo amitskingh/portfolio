@@ -1,0 +1,29 @@
+body {
+  background-color: #f5f5f5;
+  color: #404040;
+}
+
+.sticky__navbar {
+  background-color: #f5f5f5;
+  /* background-color: #b7e5ffbf; */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* background-color: #b7e5ffbf; */
+  backdrop-filter: blur(8px);
+  /* border-bottom: solid 1px #6e778bbf; */
+}
+.title__type {
+  color: #334155;
+  /* color: #0f172a; */
+}
+.bars {
+  background-color: black;
+}
+
+.header__menu {
+  color: black;
+}
+
+.contact__subtitle,
+.subtitle__type {
+  color: #475569;
+}
