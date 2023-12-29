@@ -21,9 +21,6 @@ body {
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
-  /* position: sticky;
-  top: 0;
-  z-index: 1; */
 
   padding-top: 7px;
   padding-bottom: 7px;
@@ -32,28 +29,30 @@ body {
 
 .bars {
   background-color: white;
-  color: white;
-  width: var(--size-2xl);
-  padding-bottom: 1.5px;
-  margin-bottom: 6px;
+  width: var(--size-3xl);
+  height: 2px;
 }
 
 .header__bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-right: 0.5rem;
-  border: solid 1px red;
+  gap: 0.5rem;
   width: var(--size-4xl);
   height: var(--size-4xl);
-  background-color: transparent;
   cursor: pointer;
   border: none;
   color: white;
 }
 
 .header__menu {
+  list-style-type: none;
   display: none;
 }
 
-.header__link:visited {
+.header__link, .header__link:visited {
   color: inherit;
 }
 

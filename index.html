@@ -16,6 +16,7 @@
     <!-- <link rel="stylesheet" href="./light.css" /> -->
     <link rel="stylesheet" href="./subtitle.css" />
     <link rel="stylesheet" href="./title.css" />
+    <link rel="stylesheet" href="./stylesheets/toggle.css">
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,44 +31,6 @@
         /* margin-left: 0.5rem; */
         /* margin-right: 0.5rem; */
       }
-
-      .sun__svg, .moon__svg{
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      z-index: 1;
-    }
-    .theme__mode{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #5b21b6;
-        width: 55px;
-        border-radius: 100px;
-        cursor: pointer;
-        /* box-shadow: 0 0 2px #5b21b6; */
-    }
-
-    .sun, .moon{
-      width: 25px;
-      height: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin: 2px;
-    }
-    .cover{
-      position: absolute;
-      width: 25px;
-      height: 25px;
-      border-radius: 200px;
-      transform: translateX(26px);
-      margin-left: 2px;
-      background-color: white;
-      transition: ease transform 0.3s;
-      z-index: 20;
-    }
       
     </style>
     
@@ -81,11 +44,11 @@
     <header class="sticky__navbar">
       <div class="header__container container">
         <nav class="navbar">
-          <button class="header__bars">
+          <div class="header__bars">
             <div class="bars"></div>
             <div class="bars"></div>
             <div class="bars"></div>
-          </button>
+          </div>
           <ul class="header__menu">
             <li><a class="header__link" href="#about">About</a></li>
             <li><a class="header__link" href="#featured">Work</a></li>
