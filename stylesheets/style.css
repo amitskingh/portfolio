@@ -99,8 +99,16 @@
 }
 
 /* 2xl */
-@media (min-width: 1536px) {
+/* @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+    box-shadow: 0 0 0.5rem;
   }
-}
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    border: solid 1px red;
+  }
+} */

@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="./stylesheets/subtitle.css" />
     <link rel="stylesheet" href="./stylesheets/title.css" />
     <link rel="stylesheet" href="./stylesheets/toggle.css">
+    <link rel="stylesheet" href="./stylesheets/footer.css">
+    <link rel="stylesheet" href="./stylesheets/education.css">
+    
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -168,8 +171,6 @@
         <div class="line left"></div>
         <div class="dots"></div>
         <h2 class="about__title title__type">About Me</h2>
-        <div class="dots"></div>
-        <div class="line right"></div>
       </div>
       <div class="about__container">
         <div class="reach-img__container">
@@ -198,15 +199,29 @@
       </div>
     </div>
 
-    
+    <div class="education container">
+      <div class="headingContainer">
+        <div class="line left"></div>
+        <div class="dots"></div>
+        <h2 class="about__title title__type">Education</h2>
+      </div>
+      <div class="college">
+          <div class="college__details">
+            <h2 class="college__name">Yeshwantrao Chavan College of Engineering</h2>
+            <p class="college__adress">Nagpur, Maharashtra, India</p>
+          </div>
+          <div class="field__information">
+            <h2 class="field__name">BTech. Computer Science and Engineering</h2>
+            <p class="college__cgpa">CGPA : 8.75(2023) | 2025</p>
+          </div>
+      </div>
+    </div>
 
     <div class="skills container">
       <div class="headingContainer">
         <div class="line left"></div>
         <div class="dots"></div>
         <h2 class="skill__title title__type">Skills</h2>
-        <div class="dots"></div>
-        <div class="line right"></div>
       </div>
       <div class="total__skills">
         <div class="technology">
@@ -242,8 +257,6 @@
         <div class="line left"></div>
         <div class="dots"></div>
         <h2 class="contact__title title__type">Contacts</h2>
-        <div class="dots"></div>
-        <div class="line right"></div>
       </div>
       <div class="contact__description">
         <h2 class="contact__subtitle">Get in Touch</h2>
@@ -256,27 +269,17 @@
       </div>
     </div>
 
+
+    <footer>
+
+      <div class="footer__container">
+      <p class="footer__description">Copyright © Amit Singh 2023 </p>
+      </div>
+      
+    </footer>
+
     <script src="./scripts/mobile-nav.js"></script>
     <script src="./scripts/theme-toggle.js"></script>
-
-    <script>
-      let lastScroll = 0;
-
-window.addEventListener("scroll", () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > lastScroll) {
-    // Scroll down
-    document.querySelector("header").style.transform = "translateY(-100%)";
-  } else {
-    // Scroll up
-    document.querySelector("header").style.transform = "translateY(0)";
-  }
-
-  lastScroll = currentScroll;
-});
-
-    </script>
     
   </body>
 </html>

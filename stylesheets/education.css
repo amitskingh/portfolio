@@ -1,0 +1,58 @@
+.education{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.college{
+    display: flex;
+    flex-direction: column;
+}
+.college__name, .field__name {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.college__adress, .college__cgpa {
+    font-weight: lighter;
+  }
+  .college__name, .college__adress {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: var(--size-base);
+  }
+  
+  .field__name, .college__cgpa {
+    font-size: var(--size-lg);
+  }
+  
+  /* screen size extra small */
+  @media (min-width: 475px) {
+    .college__name, .college__adress {
+      font-size: var(--size-xl);
+    }
+    .field__name, .college__cgpa {
+      font-size: var(--size-lg);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .field__name, .college__cgpa {
+      font-size: var(--size-2xl);
+    }
+    
+    .college__name, .college__adress {
+      font-size: var(--size-3xl);
+    }
+  }
+  
+  /* xl screen */
+  @media (min-width: 1280px) {
+    .field__name, .college__cgpa {
+      font-size: var(--size-3xl);
+    }
+  
+    .college__name, .college__adress {
+      font-size: var(--size-4xl);
+    }
+  }
+  

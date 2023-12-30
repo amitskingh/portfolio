@@ -10,10 +10,11 @@
   justify-self: center;
   align-self: center;
 
-  border-left: dotted 5px;
-  border-top: dotted 2px;
+  border-left: solid 1px;
+  border-top: solid 1px;
+  border-color: #64748b;
   border-radius: 200px;
-  transition: border 0.3s;
+  transition: border 0.3s ease-in-out;
   width: fit-content;
 }
 .about__container {
@@ -69,9 +70,9 @@
     font-size: var(--size-lg);
   }
   .reach-img__container {
-    border-left: dotted 7px;
-    border-top: dotted 3px;
-    transition: border ease-in-out;
+    border-left: solid 2px;
+    border-top: solid 2px;
+    border-color: #64748b;
   }
   .about__container {
     gap: 5rem;

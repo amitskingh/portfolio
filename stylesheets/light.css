@@ -11,9 +11,13 @@ body {
   backdrop-filter: blur(8px);
   /* border-bottom: solid 1px #6e778bbf; */
 }
-.title__type {
+
+.dots, .line{
+  background-color: #334155;
+}
+
+.title__type{
   color: #334155;
-  /* color: #0f172a; */
 }
 .bars {
   background-color: black;

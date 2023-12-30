@@ -20,7 +20,11 @@ body {
   background-color: #f1f5f9;
 }
 
-.title__type {
+.dots, .line{
+  background-color: #fafafa;
+}
+
+.title__type{
   color: #fafafa;
 }
 
