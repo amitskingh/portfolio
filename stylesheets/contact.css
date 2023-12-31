@@ -86,3 +86,19 @@
     height: var(--size-5xl);
   }
 }
+
+@media (min-width: 1530px) {
+  .contact__button {
+    font-size: var(--size-xl);
+  }
+  .contact__title {
+    font-size: var(--size-7xl);
+  }
+  .contact__subtitle {
+    font-size: var(--size-5xl);
+  }
+  .contact__icon > svg {
+    width: var(--size-6xl);
+    height: var(--size-6xl);
+  }
+}

@@ -86,3 +86,21 @@
     font-size: var(--size-3xl);
   }
 }
+
+@media (min-width: 1530px) {
+  .total__skills {
+    display: flex;
+    /* gap: 2rem; */
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .skill__list {
+    font-size: var(--size-2xl);
+  }
+  .skill__title {
+    font-size: var(--size-7xl);
+  }
+  .skill__subtitle {
+    font-size: var(--size-4xl);
+  }
+}
