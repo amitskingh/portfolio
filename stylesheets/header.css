@@ -22,8 +22,8 @@ body {
   justify-content: flex-end;
   overflow: hidden;
 
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   align-items: center;
 }
 
@@ -67,6 +67,15 @@ body {
 
 /* medium screen size */
 @media (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
   .header__menu {
     display: flex;
     align-items: center;
