@@ -69,9 +69,6 @@
 }
 
 @media (min-width: 1280px) {
-  .contact__title {
-    font-size: var(--size-6xl);
-  }
   .contact__subtitle {
     font-size: var(--size-4xl);
   }
@@ -86,7 +83,7 @@
     font-size: var(--size-lg);
   }
   .contact__title {
-    font-size: var(--size-7xl);
+    font-size: var(--size-6xl);
   }
   .contact__subtitle {
     font-size: var(--size-5xl);

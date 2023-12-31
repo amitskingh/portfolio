@@ -1,69 +1,65 @@
-.education{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding-bottom: 50px;
+.education {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
 }
 
-.college{
+.college {
   display: flex;
   flex-direction: column;
+  margin-left: 0.5rem;
 }
-.college__name, .field__name {
-    padding-bottom: 3px;
-    margin-bottom: 0;
+.college__name,
+.field__name {
+  padding-bottom: 3px;
+  margin-bottom: 0;
 }
-.college__cgpa, .college__adress {
+.college__cgpa,
+.college__adress {
   padding-top: 3px;
   margin-top: 0;
-  font-size: var(--size-base);
 }
-  
-.college__name, .college__adress {
-  font-size: var(--size-lg);
-}
-.field__name, .college__cgpa {
-  font-size: var(--size-base);
-}
-  
-  /* screen size extra small */
-  @media (min-width: 475px) {
-    .college__name, .college__adress {
-      font-size: var(--size-xl);
-    }
-    .field__name, .college__cgpa {
-      font-size: var(--size-lg);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .field__name, .college__cgpa {
-      font-size: var(--size-2xl);
-    }
-    
-    .college__name, .college__adress {
-      font-size: var(--size-3xl);
-    }
-  }
-  
-  /* xl screen */
-  @media (min-width: 1280px) {
-    .field__name, .college__cgpa {
-      font-size: var(--size-3xl);
-    }
-  
-    .college__name, .college__adress {
-      font-size: var(--size-4xl);
-    }
-  }
 
-    
-  @media (min-width: 1530px){
-    .field__name, .college__cgpa {
-      font-size: var(--size-4xl);
-    }
-  
-    .college__name, .college__adress {
-      font-size: var(--size-5xl);
-    }
+.college__name,
+.college__adress,
+.field__name,
+.college__cgpa {
+  font-size: var(--size-base);
+}
+
+/* screen size extra small */
+@media (min-width: 475px) {
+  .education__title {
+    font-size: var(--size-3xl);
   }
-  
+  .college__name,
+  .college__adress,
+  .field__name,
+  .college__cgpa {
+    font-size: var(--size-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .education__title {
+    font-size: var(--size-5xl);
+  }
+  .college__name,
+  .college__adress,
+  .field__name,
+  .college__cgpa {
+    font-size: var(--size-2xl);
+  }
+}
+
+@media (min-width: 1530px) {
+  .education__title {
+    font-size: var(--size-6xl);
+  }
+  .college__name,
+  .college__adress,
+  .field__name,
+  .college__cgpa {
+    font-size: var(--size-3xl);
+  }
+}

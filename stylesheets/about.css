@@ -112,10 +112,6 @@
   .about__subtitle {
     font-size: var(--size-xl);
   }
-
-  .about__title {
-    font-size: var(--size-6xl);
-  }
 }
 
 /* xl screen */
@@ -140,6 +136,6 @@
   }
 
   .about__title {
-    font-size: var(--size-7xl);
+    font-size: var(--size-6xl);
   }
 }
