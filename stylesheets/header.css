@@ -73,8 +73,8 @@ body {
     gap: 10px;
     list-style-type: none;
     font-size: var(--size-sm);
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
   }
 
   .header__link {
@@ -104,11 +104,39 @@ body {
 
 /* large screen size */
 @media (min-width: 1024px) {
+  .header__resume {
+    font-size: var(--size-base);
+  }
   .header__menu {
     font-size: var(--size-base);
   }
   .header__sun {
     width: var(--size-4xl);
     height: var(--size-4xl);
+  }
+}
+
+/*xl screen size*/
+@media (min-width: 1280px) {
+  .header__menu {
+    font-size: var(--size-lg);
+  }
+  .header__sun {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+  }
+}
+
+/*xl screen size*/
+@media (min-width: 1530px) {
+  .header__resume {
+    font-size: var(--size-lg);
+  }
+  .header__menu {
+    font-size: var(--size-xl);
+  }
+  .header__sun {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
   }
 }

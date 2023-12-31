@@ -45,9 +45,6 @@
 
 /* screen size extra small */
 @media (min-width: 475px) {
-  .reach__button {
-    font-size: var(--size-base);
-  }
   .profile__img {
     width: 18rem;
   }
@@ -67,7 +64,7 @@
 
 @media (min-width: 1024px) {
   .reach__button {
-    font-size: var(--size-lg);
+    font-size: var(--size-base);
   }
   .reach-img__container {
     border-left: solid 2px;
@@ -98,9 +95,6 @@
 
 /* xl screen */
 @media (min-width: 1280px) {
-  .reach__button {
-    font-size: var(--size-xl);
-  }
   .profile__img {
     width: 24rem;
   }
@@ -125,7 +119,7 @@
 /* xl screen */
 @media (min-width: 1530px) {
   .reach__button {
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
   }
   .profile__img {
     width: 26rem;
