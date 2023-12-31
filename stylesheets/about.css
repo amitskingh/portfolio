@@ -25,6 +25,9 @@
 .profile__img {
   width: 16rem;
 }
+.about__description > p{
+  width: calc(100% - 1rem);
+}
 .about__description {
   margin-left: 0.5em;
   margin-right: 0.5em;

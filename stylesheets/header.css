@@ -22,8 +22,8 @@ body {
   justify-content: flex-end;
   overflow: hidden;
 
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   align-items: center;
 }
 
@@ -72,8 +72,8 @@ body {
     justify-content: flex-end;
     overflow: hidden;
   
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     align-items: center;
   }
   .header__menu {
