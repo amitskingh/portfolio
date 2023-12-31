@@ -36,10 +36,6 @@
   font-size: var(--size-sm);
 }
 
-.profile__reach {
-  font-size: var(--size-sm);
-}
-
 /* screen size extra small */
 @media (min-width: 475px) {
   .profile__hello {
@@ -73,12 +69,8 @@
 
 /* xl screen */
 @media (min-width: 1280px) {
-  .profile__img {
-    width: 24rem;
-  }
-
   .profile__hello {
-    font-size: var(--size-5xl);
+    font-size: var(--size-4xl);
   }
 
   .profile__info {
@@ -89,8 +81,20 @@
     max-width: 60ch;
     font-size: var(--size-lg);
   }
+}
 
-  .profile__reach {
-    font-size: var(--size-lg);
+/* 2xl screen */
+@media (min-width: 1530px) {
+  .profile__hello {
+    font-size: var(--size-5xl);
+  }
+
+  .profile__info {
+    font-size: var(--size-9xl);
+  }
+
+  .profile__description {
+    max-width: 60ch;
+    font-size: var(--size-xl);
   }
 }

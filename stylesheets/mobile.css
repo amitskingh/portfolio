@@ -53,15 +53,6 @@
   margin-top: 10px;
 }
 
-.mobile-nav__sun {
-  margin-left: 33px;
-  width: var(--size-3xl);
-  height: var(--size-3xl);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .mobile-nav__close {
   width: var(--size-2xl);
   height: var(--size-2xl);

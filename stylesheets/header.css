@@ -88,15 +88,6 @@ body {
     margin-right: 30px;
   }
 
-  .header__sun {
-    display: block;
-    width: var(--size-3xl);
-    height: var(--size-3xl);
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
   .header__bars {
     display: none;
   }
@@ -110,20 +101,12 @@ body {
   .header__menu {
     font-size: var(--size-base);
   }
-  .header__sun {
-    width: var(--size-4xl);
-    height: var(--size-4xl);
-  }
 }
 
 /*xl screen size*/
 @media (min-width: 1280px) {
   .header__menu {
     font-size: var(--size-lg);
-  }
-  .header__sun {
-    width: var(--size-5xl);
-    height: var(--size-5xl);
   }
 }
 
@@ -134,9 +117,5 @@ body {
   }
   .header__menu {
     font-size: var(--size-xl);
-  }
-  .header__sun {
-    width: var(--size-5xl);
-    height: var(--size-5xl);
   }
 }
