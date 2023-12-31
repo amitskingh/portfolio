@@ -2,10 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #172554;
     border-top: solid 1px;
 }
 .footer__description{
-    padding: 15px;
-    color: #f1f5f9;
+    font-size: var(--size-xs);
 }
