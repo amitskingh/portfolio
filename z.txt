@@ -1,7 +1,0 @@
-<p class="profile__description">
-            Reach out me if you need any kind of the consultancy about the
-            website or you want to build your own website for your own business
-            or even if you need the assistance.
-</p>
-
-<p class="profile__reach">Feel Free to Ask! 😄</p>
