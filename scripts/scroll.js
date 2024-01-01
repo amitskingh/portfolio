@@ -9,7 +9,6 @@ contacts.style.scrollMarginTop = `${headerHeight}px`;
 project.style.scrollMarginTop = `${headerHeight}px`;
 
 window.onload = function () {
-  // reseting the scroll position to the top
     // reseting the scroll position to the top
     window.scrollTo(0, 0);
   };
