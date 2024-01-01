@@ -1,0 +1,119 @@
+#work {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+.tools__text{
+    color: #fde047;
+    font-style: italic;
+}
+
+.project__img {
+  width: 100%;
+  overflow: hidden;
+}
+.project__info > a {
+  color: black;
+  /* color: white; */
+  text-decoration: none;
+}
+.project__info > a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.3ms;
+  /* text-decoration-color: white; */
+}
+.project__btn {
+  background-color: white;
+}
+.project__btn:hover {
+  background-color: white;
+  transform: none;
+}
+.image__container {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  max-height: 12rem;
+  max-width: 15rem;
+  /* border: solid 1px black; */
+  display: block;
+  overflow: hidden;
+  justify-content: center;
+}
+.project__info {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  /* border: solid 1px red; */
+}
+.project {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  max-width: 16rem;
+  box-shadow: 0 0 2px #172554;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  transition: transform ease-in-out 0.3s;
+  background: linear-gradient(to bottom, #1e3a8a, #172554);
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 425px) {
+}
+@media (min-width: 640px) {
+  .project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: fit-content;
+    background: linear-gradient(to left, #1e3a8a, #172554);
+  }
+
+  .project__info {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .project {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    background: linear-gradient(to bottom, #1e3a8a, #172554);
+  }
+
+  .project__info {
+    max-width: 15rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .project__info,
+  .image__container {
+    max-width: 16rem;
+  }
+}
