@@ -1,7 +1,7 @@
 const themes = document.querySelectorAll(".theme__mode");
 const covers = document.querySelectorAll(".cover");
 
-let isLight = true;
+let isLight = false;
 let lightTheme = document.getElementById("light__theme");
 let darkTheme = document.getElementById("dark__theme");
 
