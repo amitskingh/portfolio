@@ -28,7 +28,7 @@
     width: 25px;
     height: 25px;
     border-radius: 200px;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     margin: 2px;
     background-color: white;
     transition: ease transform 0.3s;
