@@ -18,6 +18,11 @@
   font-size: var(--size-sm);
 }
 
+.social__links {
+  text-decoration: none;
+  color: inherit;
+}
+
 .contact__subtitle {
   font-size: var(--size-lg);
 }
