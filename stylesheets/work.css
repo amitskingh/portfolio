@@ -11,10 +11,11 @@
 
 .project__img {
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .project__info > a {
-  color: black;
+  /* color: black; */
   /* color: white; */
   text-decoration: none;
 }
@@ -24,10 +25,11 @@
   /* text-decoration-color: white; */
 }
 .project__btn {
-  background-color: white;
+  /* background-color: #0f172a; */
+  color: white;
 }
 .project__btn:hover {
-  background-color: white;
+  /* background-color: white; */
   transform: none;
 }
 .image__container {
@@ -46,18 +48,17 @@
   /* border: solid 1px red; */
 }
 .project {
-  color: white;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   max-width: 16rem;
-  box-shadow: 0 0 2px #172554;
+  box-shadow: 0 0 3px #38446f;
   border-radius: 5px;
   padding: 0.5rem;
   margin: 0.5rem;
   transition: transform ease-in-out 0.3s;
-  background: linear-gradient(to bottom, #1e3a8a, #172554);
+  /* background: linear-gradient(to bottom, #1e3a8a, #172554); */
 }
 .box {
   display: flex;
@@ -93,7 +94,7 @@
     justify-content: space-between;
     gap: 3rem;
     max-width: fit-content;
-    background: linear-gradient(to left, #1e3a8a, #172554);
+    /* background: linear-gradient(to left, #1e3a8a, #172554); */
   }
 
   .project__info {
@@ -112,12 +113,12 @@
     gap: 1.5rem;
   }
   .project {
-    height: fit-content;
+    height: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.2rem;
-    background: linear-gradient(to bottom, #1e3a8a, #172554);
+    /* background: linear-gradient(to bottom, #1e3a8a, #172554); */
   }
 
   .project__info {
